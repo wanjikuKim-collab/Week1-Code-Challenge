@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    height: 80vh;
+    height: 100vh;
     box-sizing: border-box;/*align items in a clomun*/
     display: flex;
     align-items: center;
@@ -10,12 +10,18 @@ body{
 }
 
 .container{
-    background-color: rgb(193, 184, 201);
+    background-color: rgb(136, 118, 152);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
     padding: 20px;
     margin: 50px, auto;
     width: 800px;
+    height: 500px;
     color: rgb(0, 0, 0);
-    border-radius: 8px;
+    border-radius: 15px;
     box-shadow: 3px 2px 10px rgba(0,0,0,0.3);
     transition: transform 0.5s ease-out 1s;/*smooths out the transition by adding a delay*/
 }
@@ -24,9 +30,41 @@ body{
     transform: scale(1.10);/*increases the size of our container*/
 }
 
+#studentInput{
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+}
+
+label{
+    font-size: 24px;
+    font-family:'Krub', sans-serif;
+    font-weight: 300;
+
+}
+
 li{
     list-style: none;
     font-family: 'Zilla Slab', serif;
 }
 
-h1
+h1{
+    color: rgb(58, 58, 58);
+    padding: 30px 50px 0px 50px;
+    margin: 10px 0;    
+    font-family: 'Zilla Slab', serif;
+    font-weight: 600;
+}
+
+button{
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 40%;
+    padding: 10px;
+    margin: 0 0 30px 0;
+    border-radius: 8px;
+    border: 2px solid rgb(224, 224, 224);
+    font-size: 18px;
+    font-weight: 600;
+}

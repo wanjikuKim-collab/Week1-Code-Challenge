@@ -12,13 +12,19 @@
     <script src="/index.js" defer></script>
 </head>
 <body>
-    <main class="container">        
+    
+    <main class="container">   
+        <h1> Student Grade Generator</h1>
         <form action="">
             <h2>Enter Your Marks</h2>
-                <label for="userMarks">Marks</label>
-                <input type="number" name="userMarks" id="input" placeholder="Enter marks :30">
-            
-            <button type="submit">Submit</button>
+            <section id="studentInput">
+                <div id="prompt">
+                    <label for="userMarks">Marks</label>
+                    <input type="number" name="userMarks" id="input" placeholder="Enter marks :30">
+                </div>
+                
+                <button type="submit">Submit</button>
+            </section>
         </form>
         <ul>
             <li class="grade"></li>
