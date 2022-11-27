@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 80vh;
+    box-sizing: border-box;/*align items in a clomun*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(246, 239, 252);;
+}
+
+.container{
+    background-color: rgb(193, 184, 201);
+    padding: 20px;
+    width: 800px;
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+    box-shadow: 1px 2px 8px rgba(0,0,0,0.3);
+}
