@@ -12,8 +12,21 @@ body{
 .container{
     background-color: rgb(193, 184, 201);
     padding: 20px;
+    margin: 50px, auto;
     width: 800px;
     color: rgb(0, 0, 0);
     border-radius: 8px;
-    box-shadow: 1px 2px 8px rgba(0,0,0,0.3);
+    box-shadow: 3px 2px 10px rgba(0,0,0,0.3);
+    transition: transform 0.5s ease-out 1s;/*smooths out the transition by adding a delay*/
 }
+
+.container:hover{
+    transform: scale(1.10);/*increases the size of our container*/
+}
+
+li{
+    list-style: none;
+    font-family: 'Zilla Slab', serif;
+}
+
+h1
