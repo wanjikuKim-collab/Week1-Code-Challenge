@@ -1,4 +1,4 @@
-//using querying elements to drill into the DOM
+//using selector methods to drill into the DOM
 const form = document.querySelector('form');
 const speed = document.getElementById('speed')
 const counter  = document.querySelector('p#counter')
@@ -23,13 +23,13 @@ function checkSpeed(speed) {
       
     if (checkSpeedValue <= 70) {
         feedback.textContent = 'OK';
-        counter.textContent ='...'
+        counter.textContent =' '
     } else if (checkSpeedValue> 70 && checkSpeedValue<130) {
-      feedback.textContent = '...';
-      return counter.textContent = points
+      feedback.textContent = ' ';
+      return counter.textContent = `Points: ${points}`
 
     } else if (points >= 12) {
-        counter.textContent = points
+        counter.textContent = `Points: ${points}`
       return feedback.textContent = 'License suspended'
     }
 }
