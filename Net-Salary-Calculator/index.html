@@ -25,39 +25,41 @@
         <form name="formNetSalary" id="netSalary" action="/Net-Salary-Calculator/index.html">
             <div class="require" aria-hidden="true" dir="auto">*Required</div>
             <!--Basic Salary-->
-        <div class="salary">
-            <label for="">Enter your Basic Salary</label> <br> 
-            <p class="ksh" style="color: grey;"> Ksh </p>
-            <input type="text" name="basicSalary" id="basicSalary" size="12" placeholder="0.00" required>
-            <button type="submit">Calculate</button>    
-        </div>
-        <!--Benefits-->
-        <div class="benefits">
-            <label for="">Enter your Benefits</label><br> 
-            <p class="ksh" style="color: grey;"> Ksh </p>
-            <input type="number" name="benefits" id="benefits" size="12" placeholder="0.00" required>
-            <button type="submit">Calculate</button>    
-        </div>
-        <div>
-            <li>
-                <input type="radio" name="nhif" id="NHIF" value="NHIF" >
-                <label for="NHIF">NHIF</label>                
-            </li>
-            <li>
-                <input type="radio" name="new-NSSF-II" id="plusTierII" value="NSSF-I" >
-                <label for="plusTierII">New NSSF Rates Tier I & II</label> 
-            </li>
-            <li>
-                <input type="radio" name="new-NSSF-I" id="minusTierII" value="NSSF-II" >
-                <label for="minusTierII">New NSSF Rates Tier I only</label>                
-            </li>
-            <li>
-                <input type="radio" name="old-NSSF" id="old-NSSF" value="NSSF-II" >
-                <label for="old-NSSF">Old NSSF Rates</label>
-                
+            <div class="salary">
+                <label for="">Enter your Basic Salary</label> <br> 
+                <p class="ksh" style="color: grey;"> Ksh </p>
+                <input type="text" name="basicSalary" id="basicSalary" size="12" placeholder="0.00" required>
+                <button type="submit">Calculate</button>    
+            </div>
+            <!--Benefits-->
+            <div class="benefits">
+                <label for="">Enter your Benefits</label><br> 
+                <p class="ksh" style="color: grey;"> Ksh </p>
+                <input type="number" name="benefits" id="benefits" size="12" placeholder="0.00" required>
+                <button type="submit">Calculate</button>    
+            </div>
+            <!--non-cash  benefits-->
+            <div>
+                <li class="radio">
+                    <input type="checkbox" name="nhif" id="NHIF" value="NHIF" >
+                    <label for="NHIF">Ignore non-cash benefits up to 3000</label>                
                 </li>
-        </div>
-    
+            </div>
+            <!--NSSF Rates-->
+            <div>
+                <li class="radio">
+                    <input type="radio" name="new-NSSF-II" id="plusTierII" value="NSSF-I" >
+                    <label for="plusTierII">New NSSF Rates Tier I & II</label> 
+                </li>
+                <li class="radio">
+                    <input type="radio" name="new-NSSF-I" id="minusTierII" value="NSSF-II" >
+                    <label for="minusTierII">New NSSF Rates Tier I only</label>                
+                </li>
+                <li class="radio">
+                    <input type="radio" name="old-NSSF" id="old-NSSF" value="NSSF-II" >
+                    <label for="old-NSSF">Old NSSF Rates</label>                
+                </li>
+            </div>    
         </form>
     </main>
 </body>

@@ -38,8 +38,7 @@ h1{
     text-align: center; 
     color: rgb(24, 22, 22);
 }
-/* styling the inputs as well as their labesl*/
-
+/* Basic Salary and Benefits*/
 label{
     font-weight: 600;
     display: inline-block;
@@ -96,9 +95,22 @@ button:hover{
     color: antiquewhite;
 }
 
-
+/*NHIF and NSSF*/
 
 li{
     list-style: none;
 }
 
+.radio{
+    display: flex;
+    flex-direction:row;
+}
+
+.radio input{
+    width: auto;
+}
+
+.radio label{
+    margin:0;
+    margin-left:0.5rem;
+}
