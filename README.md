@@ -27,7 +27,10 @@ If the driver gets more than 12 points, the output prinyed is: “License suspen
 Given the basic salary and benefits of an employee, this calculator calculates the following: the Payee Tax, NHIF, NSSF Deductions 
 and net salary.
 
-
+- Basic salary is the amount that an individual receives prior to any extras being added or payments deducted.
+- Net salary is what an employee takes home after adding allowances and subtracting the required deductions.
+    `Net salary = Gross Salary - Deductions `
+-   `Gross Salary = basic Sallary + Allowances`
 
 
 

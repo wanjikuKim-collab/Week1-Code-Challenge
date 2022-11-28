@@ -31,6 +31,6 @@ const checkInput = (input)=>{
       } else if (checkInput >= 0 && checkInput <= 40) {
         generatedGrade.textContent= 'You grade is: E';
       } else {
-        generatedGrade.textContent = '<li style="color:red;>Errror</li>';
+        generatedGrade.innerHTML = '<li style="color:red";>Errror</li>';
       }
     }

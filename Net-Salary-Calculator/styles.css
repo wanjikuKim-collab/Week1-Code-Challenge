@@ -12,6 +12,10 @@ body{
     
 }
 
+.require{
+    color: red;
+}
+
 #container{
     display: flex;
     flex-direction: column;
@@ -88,6 +92,7 @@ button{
     border: 1px solid rgb(199, 188, 201);
     padding: 1rem;
     cursor: pointer;
+    margin-top: 30px;
 }
 
 button:hover{
@@ -95,22 +100,23 @@ button:hover{
     color: antiquewhite;
 }
 
-/*NHIF and NSSF*/
-
 li{
     list-style: none;
 }
 
-.radio{
+/* Outputs */
+.outputs{
     display: flex;
-    flex-direction:row;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    }
+
+.outputs p{
+  color: rgb(7, 51, 7);  
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+  
 }
 
-.radio input{
-    width: auto;
-}
-
-.radio label{
-    margin:0;
-    margin-left:0.5rem;
-}
