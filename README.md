@@ -23,6 +23,12 @@ In this mini-project, I've created a Speed Detector dashboard that takes in the 
 If the driver gets more than 12 points, the output prinyed is: “License suspended”.
 
 
+## Net Salary Calculator
+Given the basic salary and benefits of an employee, this calculator calculates the following: the Payee Tax, NHIF, NSSF Deductions 
+and net salary.
+
+Payee is an acronym for Pay As You Earn
+
 
 
 
