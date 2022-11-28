@@ -4,41 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,400;1,900&family=Montserrat:wght@400;500;600&family=Oswald&family=Pacifico&family=Poppins:wght@700&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <!--Link to CSS-->
+    <link rel="stylesheet" href="/Net-Salary-Calculator/styles.css">
+    <!--Link to JS-->
+    <script src="./Net-Salary-Calculator/index.js"></script>
     <title> Net Salary Calculator</title>
 </head>
 <body>
-    <form action="/">
-        <h2>PAYE Calculator</h2>
-        <section>
-            <label for="year">Year of Taxation</label>
-            <select name="pick-year" id="year">
-                <option value="select">--choose--</option>
-                <option value="2022">2022</option>
-                <option value="2021">2021</option>
-                <option value="2020">2020</option>
-                <option value="2019">2019</option>
-                <option value="2018">2018</option>
-                <option value="2017">2017</option>
-            </select>
-        </section>
-        
+    <header>
 
-
-        <ul>
+    </header>
+    <main id="container">
+        <h1>Net Salary Calculator</h1>
+       
+        <!--Value in the form action loads the main html page-->
+        <form name="formNetSalary" id="netSalary" action="/Net-Salary-Calculator/index.html">
+            <div class="require" aria-hidden="true" dir="auto">*Required</div>
+            <!--Basic Salary-->
+        <div class="salary">
+            <label for="">Enter your Basic Salary</label> <br> 
+            <p class="ksh" style="color: grey;"> Ksh </p>
+            <input type="text" name="basicSalary" id="basicSalary" size="12" placeholder="0.00" required>
+            <button type="submit">Calculate</button>    
+        </div>
+        <!--Benefits-->
+        <div class="benefits">
+            <label for="">Enter your Benefits</label><br> 
+            <p class="ksh" style="color: grey;"> Ksh </p>
+            <input type="number" name="benefits" id="benefits" size="12" placeholder="0.00" required>
+            <button type="submit">Calculate</button>    
+        </div>
+        <div>
             <li>
-
+                <input type="radio" name="nhif" id="NHIF" value="NHIF" >
+                <label for="NHIF">NHIF</label>                
             </li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </form>
-
+            <li>
+                <input type="radio" name="new-NSSF-II" id="plusTierII" value="NSSF-I" >
+                <label for="plusTierII">New NSSF Rates Tier I & II</label> 
+            </li>
+            <li>
+                <input type="radio" name="new-NSSF-I" id="minusTierII" value="NSSF-II" >
+                <label for="minusTierII">New NSSF Rates Tier I only</label>                
+            </li>
+            <li>
+                <input type="radio" name="old-NSSF" id="old-NSSF" value="NSSF-II" >
+                <label for="old-NSSF">Old NSSF Rates</label>
+                
+                </li>
+        </div>
     
+        </form>
+    </main>
 </body>
 </html>

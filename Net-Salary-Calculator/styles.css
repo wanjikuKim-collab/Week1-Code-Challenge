@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    border: 0;
+}
+
+body{
+    background-color: rgb(212, 211, 211);
+    color: rgb(247, 241, 241);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    justify-items: center;
+    
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+form{
+    width: 35rem;
+    margin: 0.5rem auto;
+    background-color: rgb(170, 176, 122);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+h1{
+    display: block;
+    font-size: 48px;
+    font-weight: bold;
+    font-family:'Poppins', sans-serif;
+    text-align: center; 
+    color: rgb(24, 22, 22);
+}
+/* styling the inputs as well as their labesl*/
+
+label{
+    font-weight: 600;
+    display: inline-block;
+    width: 100%;
+    font-size: 24px;
+
+}
+
+.salary,
+.benefits{
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    width: 100%;
+}
+.ksh{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 24%;
+    font-size: 135%;
+}
+
+#basicSalary,
+#benefits
+{
+    background-color: rgb(170, 176, 122);
+    padding-right: 5%;
+    height: 44px;
+    min-height:31px;
+    text-align: right;
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-radius: 0;
+    width: 59%;
+    font-size: 25px;
+    outline: none;
+    margin-top: 3%;
+}
+
+button{
+    font-size:50px;
+    font-weight: 600;
+    font: inherit;
+    border-radius: 5px;
+    border: 1px solid rgb(199, 188, 201);
+    padding: 1rem;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(56, 47, 56);
+    color: antiquewhite;
+}
+
+
+
+li{
+    list-style: none;
+}
+
