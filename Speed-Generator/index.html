@@ -9,21 +9,24 @@
     <title>Speed Generator</title>
 </head>
 <body>
-    <h1>SPEED GENERATOR</h1>
+   
     <div id="container">       
-        <div class="display">
             <img src="./png/green-dash.png" alt="car speedometer">
             <form action="#">
-                <label for="speed"></label>
-                <input type="number" name="speed" id="speed" placeholder="Enter Speed in km/s" required/>
-    
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-        <section>
-            <p id="counter"> .... </p>
-            <p id="feedback">....</p>
-        </section>
+                <h1>SPEED GENERATOR</h1>
+                    <!--takes drivers input-->
+                <div>
+                    <label for="speed"></label>
+                    <input type="number" name="speed" id="speed" placeholder="Enter Speed in km/s" required/>
+                        <!--submission button-->
+                    <button type="submit">Submit</button>
+                    <!--Outputs OK if speed is below 70 and License suspended if its beyond 12points-->
+                    <div>    
+                        <p id="counter"> .... </p>
+                        <p id="feedback">....</p>        
+                    </div>
+                </div>
+            </form>            
     </div>
 </body>
 </html>

@@ -7,7 +7,6 @@ body{
     height: 100vh;
     box-sizing: border-box;/*align items in a clomun*/
     display: flex;
-    flex-direction: ;
     align-items: center;
     justify-content: center;
     background-color: rgb(248, 249, 249);;
@@ -16,14 +15,13 @@ body{
 #container{
     background-color: rgb(13, 36, 36);
     display: flex;
-    flex-direction:column;
-    align-items: center;
     text-align: center;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
     margin: 50px, auto;
-    width: 800px;
-    height: 500px;
+    width: 1000px;
+    height: 600px;
     color: rgb(0, 0, 0);
     border-radius: 15px;
     box-shadow: 3px 2px 10px rgba(0,0,0,0.3);
@@ -31,7 +29,8 @@ body{
 }
 
 form{
-    width: 35rem;
+    width: 20rem;
+    background-color: rgb(242, 250, 215);
     margin: 0.5rem auto;
     border-radius: 6px;
     padding: 1rem;
@@ -44,22 +43,8 @@ label{
     font-weight:500;
 }
 
-
-
-.display{
-    display: flex;
-    align-items: center;
-}
-
-label{
-    font-size: 24px;
-    font-family:'Krub', sans-serif;
-    font-weight: 300;
-
-}
-
 h1{
-    color: rgb(58, 58, 58);
+    color: rgb(64, 66, 7);
     padding: 30px 50px 0px 50px;
     margin: 10px 0;    
     font-family: 'Zilla Slab', serif;
@@ -74,4 +59,14 @@ button{
     cursor: pointer;
 }
 
+button:hover{
+    background-color: rgb(56, 47, 56);
+    color: antiquewhite;
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    color: rgb(125, 132, 45);
+}
 

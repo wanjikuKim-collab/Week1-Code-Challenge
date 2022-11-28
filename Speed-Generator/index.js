@@ -23,8 +23,11 @@ function checkSpeed(speed) {
       
     if (checkSpeedValue <= 70) {
         feedback.textContent = 'OK';
+        counter.textContent ='...'
     } else if (checkSpeedValue> 70 && checkSpeedValue<130) {
+      feedback.textContent = '...';
       return counter.textContent = points
+
     } else if (points >= 12) {
         counter.textContent = points
       return feedback.textContent = 'License suspended'
