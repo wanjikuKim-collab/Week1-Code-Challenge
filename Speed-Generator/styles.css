@@ -7,6 +7,7 @@ body{
     height: 100vh;
     box-sizing: border-box;/*align items in a clomun*/
     display: flex;
+    flex-direction: ;
     align-items: center;
     justify-content: center;
     background-color: rgb(248, 249, 249);;
@@ -15,7 +16,7 @@ body{
 #container{
     background-color: rgb(13, 36, 36);
     display: flex;
-    flex-direction: row;
+    flex-direction:column;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -29,32 +30,32 @@ body{
     transition: transform 0.5s ease-out 1s;/*smooths out the transition by adding a delay*/
 }
 
-.container:hover{
-    transform: scale(1.10);/*increases the size of our container*/
+form{
+    width: 35rem;
+    margin: 0.5rem auto;
+    border-radius: 6px;
+    padding: 1rem;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2); 
 }
 
-#studentInput{
+label{
+    margin: 0.5rem 0;
+    display: block;
+    font-weight:500;
+}
+
+
+
+.display{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
 }
 
-.prompt{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 label{
     font-size: 24px;
     font-family:'Krub', sans-serif;
     font-weight: 300;
 
-}
-
-li{
-    list-style: none;
-    font-family: 'Zilla Slab', serif;
 }
 
 h1{
@@ -66,15 +67,11 @@ h1{
 }
 
 button{
-    text-decoration: none;
-    text-transform: uppercase;
-    display: inline-block;
-    width: 40%;
-    padding: 10px;
-    margin: 0 0 30px 0;
-    border-radius: 8px;
-    border: 2px solid rgb(224, 224, 224);
-    font-size: 18px;
-    font-weight: 600;
+    font: inherit;
+    border-radius: 5px;
+    border: 1px solid rgb(199, 188, 201);
+    padding: 0.5rem;
+    cursor: pointer;
 }
+
 

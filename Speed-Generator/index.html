@@ -9,14 +9,17 @@
     <title>Speed Generator</title>
 </head>
 <body>
-    <div id="container">
-        <h1>SPEED</h1>
-        <form action="#">
-            <label for="speed"></label>
-            <input type="number" name="speed" id="speed" placeholder="Enter Speed" required/>
-
-            <button type="submit">Submit</button>
-        </form>
+    <h1>SPEED GENERATOR</h1>
+    <div id="container">       
+        <div class="display">
+            <img src="./png/green-dash.png" alt="car speedometer">
+            <form action="#">
+                <label for="speed"></label>
+                <input type="number" name="speed" id="speed" placeholder="Enter Speed in km/s" required/>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </div>
         <section>
             <p id="counter"> .... </p>
             <p id="feedback">....</p>

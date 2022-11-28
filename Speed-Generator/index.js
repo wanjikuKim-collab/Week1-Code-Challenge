@@ -31,6 +31,7 @@ function checkSpeed(speed) {
     }
 }
     
+
     // console.log(checkSpeed(150))
 
 

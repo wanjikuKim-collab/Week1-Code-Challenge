@@ -13,37 +13,23 @@
 </head>
 <body>
     
-    <main class="container">   
-        <h1> Student Grade Generator</h1>
-        <form action="">
+    <main class="container"> 
+        <section class="mid">
+            <div class="line"></div>  
+            <h1> Student Grade Generator</h1>
+        </section>
+        <form action="/">
             <section id="studentInput">
                 <div class="prompt">
-                    <label for="userMarks">Mathematics</label>
+                    <label for="userMarks">Marks</label>
                     <input type="number" name="userMarks" id="input" placeholder="Enter marks :30">
-                </div>
-                <div class="prompt">
-                    <label for="userMarks">Electives</label>
-                    <input type="number" name="userMarks" id="input" placeholder="Enter marks :30">
-                </div>
-                <div class="prompt">
-                    <label for="userMarks">Languages</label>
-                    <input type="number" name="userMarks" id="input" placeholder="Enter marks :30">
-                </div>
-                <div class="prompt">
-                    <label for="userMarks">Sciences</label>
-                    <input type="number" name="userMarks" id="input" placeholder="Enter marks :30">
-                </div>
-                <div class="prompt">
-                    <label for="userMarks">Humanities</label>
-                    <input type="number" name="userMarks" id="input" placeholder="Enter marks :30">
-                </div>
-                
+                </div>                
                 <button type="submit">Submit</button>
+                <ul>
+                    <li class="grade"></li>
+                </ul>
             </section>
         </form>
-        <ul>
-            <li class="grade"></li>
-        </ul>
     </main>
     
 
