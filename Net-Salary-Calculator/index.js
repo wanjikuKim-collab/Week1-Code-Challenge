@@ -8,8 +8,9 @@ const htmlNhif = document.querySelector('p#nhif')
 const payee = document.getElementById('payee')
 const htmlNet = document.getElementById('net')
 
-//This checks the basic salary value that is input 
-const grossInput = input.value; 
+const basic = input.value;
+
+
 
 
 form.addEventListener('submit', e=>{
@@ -24,10 +25,9 @@ form.addEventListener('submit', e=>{
 //subtracting the required deductions.
 function calcNetSalary(input){
     const nssf = parseInt(nssfDeduction(input));
-    console.log(nssf)
     const nhif = nhifDeduction(input);
     const payeTax = checkPayee(input);
-    const grossSalary = input + allowance;
+    const grossSalary = input + allowance.value;
     const netSalary = grossSalary - payeTax -nssf -nhif;
     return netSalary;
 
@@ -36,15 +36,17 @@ function calcNetSalary(input){
 
 
 //remember input is gross input
+//recall basic = input.value
 function checkPayee(input){
-    if(input>=0 && input <= 24000){ 
-        let payeeValue = 0.1*input       
+    
+    if(basic>=0 && basic <= 24000){ 
+        const payeeValue = 0.1*input.value     
         return payee.textContent = `PAYE: ${payeeValue}`
-    }else if(input>24000 && input<= 32333){ 
-        let payeeValue = 0.25*input       
+    }else if(basic>24000 && basic <= 32333){ 
+        const payeeValue = 0.25*input.value       
         return payee.textContent = `PAYE: ${payeeValue}`
-    }else if(input > 32333){ 
-        let payeeValue = 0.30*input       
+    }else if(basic > 32333){ 
+        const payeeValue = 0.30*input.value       
         return payee.textContent= `PAYE: ${payeeValue}`
     }
 }
@@ -92,7 +94,8 @@ function nhifDeduction(input){
 
 
 function nssfDeduction(input){    
-    const deduction = grossInput*0.06  
+    const deduction = input.value *0.06;
+    console.log(deduction) 
     return htmlNssf.textContent = `NSSF: ${deduction}` 
 }
 
