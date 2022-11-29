@@ -1,6 +1,5 @@
 //monthly PAYE 
 
-const generatedGrade = document.querySelector('li');
 const form = document.querySelector('form');
 const input = document.getElementById('basicSalary');
 const allowance = document.getElementById('benefits');
@@ -8,6 +7,10 @@ const htmlNssf = document.getElementById('nssf')
 const htmlNhif = document.querySelector('p#nhif')
 const payee = document.getElementById('payee')
 const htmlNet = document.getElementById('net')
+
+//This checks the basic salary value that is input 
+const grossInput = input.value; 
+
 
 form.addEventListener('submit', e=>{
     //The event listener has a default of sending content to the browser
@@ -20,14 +23,13 @@ form.addEventListener('submit', e=>{
 //Net salary is what an employee takes home after adding allowances and 
 //subtracting the required deductions.
 function calcNetSalary(input){
-    const nssf = nssfDeduction(input);
+    const nssf = parseInt(nssfDeduction(input));
+    console.log(nssf)
     const nhif = nhifDeduction(input);
     const payeTax = checkPayee(input);
     const grossSalary = input + allowance;
     const netSalary = grossSalary - payeTax -nssf -nhif;
-    console.log(netSalary);
-
-    /*Outputs*/
+    return netSalary;
 
 }
 
@@ -89,6 +91,8 @@ function nhifDeduction(input){
 
 
 
-function nssfDeduction(input){
-    return htmlNssf.textContent *=input * 0.06
+function nssfDeduction(input){    
+    const deduction = grossInput*0.06  
+    return htmlNssf.textContent = `NSSF: ${deduction}` 
 }
+
