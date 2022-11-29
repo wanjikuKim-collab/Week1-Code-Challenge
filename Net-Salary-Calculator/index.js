@@ -38,8 +38,10 @@ function calcNetSalary(input){
     const netSalary = grossSalary - payeTax -nssf -nhif;
     //innerHTML adds both text and elements to the DOM
     htmlNet.innerHTML = `Net Salary: ${netSalary}`
+
+    // here console log is used to debug if our outputs are strings or numbers
     // console.log(netSalary, ' netSalary', grossSalary, 'grossSalary')
-    // console.log(nssf, 'nssf', nhif ,' nhif', payeTax , 'payeTax')
+    // console.log(nssf, 'nssf', nhif ,' nhif', checkPayee , 'checkPayee')
     return netSalary;
 
 }

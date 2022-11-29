@@ -27,7 +27,7 @@ body{
 form{
     width: 35rem;
     margin: 0.5rem auto;
-    background-color: rgb(170, 176, 122);
+    background: linear-gradient(70deg, rgb(224, 73, 73),rgb(25,29,29));
     border-radius: 10px;
     padding: 1rem;
     box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2);
@@ -70,7 +70,7 @@ label{
 #basicSalary,
 #benefits
 {
-    background-color: rgb(170, 176, 122);
+    background:linear-gradient(70deg, rgb(224, 73, 73),rgb(25,29,29));
     padding-right: 5%;
     height: 44px;
     min-height:31px;
@@ -113,7 +113,7 @@ li{
     }
 
 .outputs p{
-  color: rgb(7, 51, 7);  
+  color: rgb(238, 219, 214);  
   font-size: 20px;
   font-weight: 600;
   margin-top: 20px;
